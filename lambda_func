@@ -1,0 +1,15 @@
+import json
+import boto3
+import csv
+import pandas as pd
+
+
+def lambda_handler(event, context):
+    df=pd.read_csv("s3://nilesh1995/input/asl.csv")
+    print(df)
+    # TODO implement
+    return {
+        'statusCode': 200,
+        'body': json.dumps('Hello from Lambda!')
+    }
+
