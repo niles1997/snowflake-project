@@ -45,4 +45,3 @@ def master_array(df):
 
 df_output = master_array(df_json)
 df_output.show()
-df_output.printSchema()
